@@ -13,6 +13,15 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		54142FDE155BA21D000216F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		54142FE4155BA21D000216F6 /* HppleLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 54142FE3155BA21D000216F6 /* HppleLib.m */; };
+		54142FE9155BA223000216F6 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D786310F34E89200173CB6 /* XPathQuery.m */; };
+		54142FEA155BA223000216F6 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D786000F34E2FE00173CB6 /* TFHpple.m */; };
+		54142FEB155BA223000216F6 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D786920F34F14500173CB6 /* TFHppleElement.m */; };
+		54142FEC155BA22E000216F6 /* XPathQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D786320F34E89200173CB6 /* XPathQuery.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		54142FED155BA24C000216F6 /* TFHpple.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D785FF0F34E2FE00173CB6 /* TFHpple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54142FEE155BA24C000216F6 /* TFHppleElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D786910F34F14500173CB6 /* TFHppleElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54142FF7155BA5D0000216F6 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D786350F34E8A600173CB6 /* libxml2.2.dylib */; };
 		75D785D30F34E06F00173CB6 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D785CE0F34E06F00173CB6 /* GTMSenTestCase.m */; };
 		75D785D40F34E06F00173CB6 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D785D00F34E06F00173CB6 /* GTMIPhoneUnitTestMain.m */; };
 		75D785D50F34E06F00173CB6 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D785D10F34E06F00173CB6 /* GTMIPhoneUnitTestDelegate.m */; };
@@ -38,6 +47,10 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Hpple_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hpple_Prefix.pch; sourceTree = "<group>"; };
+		54142FDD155BA21D000216F6 /* libHppleLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHppleLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54142FE1155BA21D000216F6 /* HppleLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HppleLib-Prefix.pch"; sourceTree = "<group>"; };
+		54142FE2155BA21D000216F6 /* HppleLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HppleLib.h; sourceTree = "<group>"; };
+		54142FE3155BA21D000216F6 /* HppleLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HppleLib.m; sourceTree = "<group>"; };
 		75D785A30F34DFB000173CB6 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D785A50F34DFB000173CB6 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
 		75D785CE0F34E06F00173CB6 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
@@ -70,6 +83,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54142FDA155BA21D000216F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54142FDE155BA21D000216F6 /* Foundation.framework in Frameworks */,
+				54142FF7155BA5D0000216F6 /* libxml2.2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75D785A10F34DFB000173CB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +117,7 @@
 			children = (
 				1D6058910D05DD3D006BFB54 /* Hpple.app */,
 				75D785A30F34DFB000173CB6 /* Test.app */,
+				54142FDD155BA21D000216F6 /* libHppleLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +130,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				54142FDF155BA21D000216F6 /* HppleLib */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				75D785A50F34DFB000173CB6 /* Test-Info.plist */,
@@ -141,6 +165,24 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54142FDF155BA21D000216F6 /* HppleLib */ = {
+			isa = PBXGroup;
+			children = (
+				54142FE2155BA21D000216F6 /* HppleLib.h */,
+				54142FE3155BA21D000216F6 /* HppleLib.m */,
+				54142FE0155BA21D000216F6 /* Supporting Files */,
+			);
+			path = HppleLib;
+			sourceTree = "<group>";
+		};
+		54142FE0155BA21D000216F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54142FE1155BA21D000216F6 /* HppleLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		75D7859D0F34DF1D00173CB6 /* Hpple */ = {
@@ -189,6 +231,19 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		54142FDB155BA21D000216F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54142FED155BA24C000216F6 /* TFHpple.h in Headers */,
+				54142FEE155BA24C000216F6 /* TFHppleElement.h in Headers */,
+				54142FEC155BA22E000216F6 /* XPathQuery.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		1D6058900D05DD3D006BFB54 /* Hpple */ = {
 			isa = PBXNativeTarget;
@@ -206,6 +261,23 @@
 			productName = Hpple;
 			productReference = 1D6058910D05DD3D006BFB54 /* Hpple.app */;
 			productType = "com.apple.product-type.application";
+		};
+		54142FDC155BA21D000216F6 /* HppleLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54142FE7155BA21D000216F6 /* Build configuration list for PBXNativeTarget "HppleLib" */;
+			buildPhases = (
+				54142FD9155BA21D000216F6 /* Sources */,
+				54142FDA155BA21D000216F6 /* Frameworks */,
+				54142FDB155BA21D000216F6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HppleLib;
+			productName = HppleLib;
+			productReference = 54142FDD155BA21D000216F6 /* libHppleLib.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		75D785A20F34DFB000173CB6 /* Test */ = {
 			isa = PBXNativeTarget;
@@ -243,6 +315,7 @@
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Hpple */,
 				75D785A20F34DFB000173CB6 /* Test */,
+				54142FDC155BA21D000216F6 /* HppleLib */,
 			);
 		};
 /* End PBXProject section */
@@ -291,6 +364,17 @@
 				75D786010F34E2FE00173CB6 /* TFHpple.m in Sources */,
 				75D786330F34E89200173CB6 /* XPathQuery.m in Sources */,
 				75D786930F34F14500173CB6 /* TFHppleElement.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54142FD9155BA21D000216F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54142FE4155BA21D000216F6 /* HppleLib.m in Sources */,
+				54142FE9155BA223000216F6 /* XPathQuery.m in Sources */,
+				54142FEA155BA223000216F6 /* TFHpple.m in Sources */,
+				54142FEB155BA223000216F6 /* TFHppleElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +453,54 @@
 				PRODUCT_NAME = Hpple;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		54142FE5155BA21D000216F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/HppleLib.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HppleLib/HppleLib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		54142FE6155BA21D000216F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/HppleLib.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HppleLib/HppleLib-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -459,6 +591,15 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54142FE7155BA21D000216F6 /* Build configuration list for PBXNativeTarget "HppleLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54142FE5155BA21D000216F6 /* Debug */,
+				54142FE6155BA21D000216F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
